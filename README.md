@@ -1,6 +1,6 @@
 # README #
 
-This is the new project I have started. As the project name suggests it allows a user to write a review on a movie. They may also view existing reviews that have been saved on a document. 
+This is the new project. As the project name suggests it allows a user to write a review on a movie. They may also view existing reviews that have been saved on a document. 
 
 ### What has been done so far ###
 
@@ -30,4 +30,4 @@ This is the new project I have started. As the project name suggests it allows a
 * **CreateReview Class**
      * retrieves all information from the WRP
 
-I need some input for what classes are needed.  
+I need some input for what classes are needed.
