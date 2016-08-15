@@ -37,6 +37,8 @@ namespace MovieReviewApp
             _movieCombo.SelectedIndex = 0;
             _starCombo.SelectedIndex = 0;
             _reviewBlock.Text = "";
+
+
         }
 
         private void OnReturn(object sender, RoutedEventArgs e)
