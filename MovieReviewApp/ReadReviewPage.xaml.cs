@@ -20,26 +20,16 @@ namespace MovieReviewApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class ReadReviewPage : Page
     {
-        public MainPage()
+        public ReadReviewPage()
         {
             this.InitializeComponent();
         }
 
-        private void OnWrite(object sender, RoutedEventArgs e)
+        private void OnReturn(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(WriteReviewPage));
-        }
-
-        private void OnRead(object sender, RoutedEventArgs e)
-        {
-            this.Frame.Navigate(typeof(ReadReviewPage));
-        }
-
-        private void OnExit(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Exit();
+            this.Frame.Navigate(typeof(MainPage));
         }
     }
 }

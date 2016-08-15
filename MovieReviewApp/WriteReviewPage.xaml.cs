@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -20,26 +21,27 @@ namespace MovieReviewApp
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage : Page
+    public sealed partial class WriteReviewPage : Page
     {
-        public MainPage()
+        public WriteReviewPage()
         {
             this.InitializeComponent();
         }
 
-        private void OnWrite(object sender, RoutedEventArgs e)
+        private async void OnSubmit(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(WriteReviewPage));
+
+            var dialog = new MessageDialog("Review has been submitted");
+            await dialog.ShowAsync();
+
+            _movieCombo.SelectedIndex = 0;
+            _starCombo.SelectedIndex = 0;
+            _reviewBlock.Text = "";
         }
 
-        private void OnRead(object sender, RoutedEventArgs e)
+        private void OnReturn(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(ReadReviewPage));
-        }
-
-        private void OnExit(object sender, RoutedEventArgs e)
-        {
-            Application.Current.Exit();
+           this.Frame.Navigate(typeof(MainPage));
         }
     }
-}
+ }

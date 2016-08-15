@@ -8,6 +8,19 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock x:Name="_titleBlock" HorizontalAlignment="Center" Margin="170,70" TextWrapping="Wrap" Text="Welcome Movie Review App" VerticalAlignment="Center" FontSize="75" Grid.ColumnSpan="2"/>
+        <Button x:Name="_writeBtn" Content="Write Reviews" HorizontalAlignment="Center" Margin="100,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="250" Height="100" FontSize="30" Click="OnWrite"/>
+        <Button x:Name="_readBtn" Content="Exit" HorizontalAlignment="Center" Margin="0,0,0,100" Grid.Row="2" VerticalAlignment="Center" Width="250" Height="100" FontSize="30" Click="OnExit" Grid.ColumnSpan="2"/>
+        <Button x:Name="_exitBtn" Content="Read Reviews" HorizontalAlignment="Center" Margin="0,0,100,0" Grid.Row="1" VerticalAlignment="Center" Width="250" Height="100" FontSize="30" Grid.Column="1" Click="OnRead"/>
 
     </Grid>
 </Page>
