@@ -6,8 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieReviewApp
 {
-    class Movie
+    class DataStorage
     {
-        
     }
 }

@@ -8,8 +8,15 @@ namespace MovieReviewApp
 {
     class Author
     {
+        /// <summary>
+        /// name of author
+        /// </summary>
         private string _name;
 
+        /// <summary>
+        /// constructor for author conatins name
+        /// </summary>
+        /// <param name="name"></param>
         public Author(string name)
         {
             _name = name;

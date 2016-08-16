@@ -99,11 +99,11 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Author.cs" />
-    <Compile Include="CreateReview.cs" />
+    <Compile Include="DataStorage.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Movie.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReadReviewPage.xaml.cs">
       <DependentUpon>ReadReviewPage.xaml</DependentUpon>
