@@ -53,23 +53,6 @@ namespace MovieReviewApp
             this.Frame.Navigate(typeof(MainPage));
         }
 
-        private void FillMovieCombo(object sender, RoutedEventArgs e)
-        {
-            {
-                try
-                {
-                    string text = File.ReadAllText("C:/Users/Owner/Documents/Mobile Computing/SEMESTER TWO/PROG10065 - Interative Development/TermProjectMovie");
 
-                    while (text != null)
-                    {
-                        _movieCombo.Items.Add(text);
-                    }
-                }
-                catch (Exception ex)
-                {
-                    var exce = new MessageDialog("Review has been submitted");
-                }
-            }
-        }
     }
 }
