@@ -98,6 +98,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Author.cs" />
     <Compile Include="CreateReview.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -107,6 +108,7 @@
     <Compile Include="ReadReviewPage.xaml.cs">
       <DependentUpon>ReadReviewPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Review.cs" />
     <Compile Include="WriteReviewPage.xaml.cs">
       <DependentUpon>WriteReviewPage.xaml</DependentUpon>
     </Compile>

@@ -19,7 +19,7 @@ using Windows.UI.Xaml.Navigation;
 namespace MovieReviewApp
 {
     /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
+    /// An page that allows user to write a review for a movie
     /// </summary>
     public sealed partial class WriteReviewPage : Page
     {
@@ -28,6 +28,13 @@ namespace MovieReviewApp
             this.InitializeComponent();
         }
 
+        /// <summary>
+        /// When a review is submitted the values will be passed and stored
+        /// A message diaglog will appear to indicate if it was successful or not
+        /// It will then clear all the inputs and set the boxes to deault
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private async void OnSubmit(object sender, RoutedEventArgs e)
         {
 
