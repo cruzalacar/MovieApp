@@ -16,7 +16,7 @@ namespace MovieReviewApp
         /// <summary>
         /// rating author gives to movie
         /// </summary>
-        private int _rate;
+        private string _rate;
 
         /// <summary>
         /// a short discription of author's thoughts on the movie
@@ -35,7 +35,7 @@ namespace MovieReviewApp
         /// <param name="rate"> The rating of the movie </param>
         /// <param name="descript"> short review on the movie </param>
         /// <param name="author"> author of review</param>
-        public Review(string title, int rate, string descript, Author author)
+        public Review(string title, string rate, string descript, Author author)
         {
             _title = title;
             _rate = rate;
@@ -49,7 +49,7 @@ namespace MovieReviewApp
             set { _title = value; }
         }
 
-        public int Rate
+        public string Rate
         {
             get { return _rate; }
             set { _rate = value; }

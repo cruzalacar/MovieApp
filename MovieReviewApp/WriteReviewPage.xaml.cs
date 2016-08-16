@@ -23,9 +23,14 @@ namespace MovieReviewApp
     /// </summary>
     public sealed partial class WriteReviewPage : Page
     {
+        private Review _review;
+
+        private Author _author;
+
         public WriteReviewPage()
         {
             this.InitializeComponent();
+
         }
 
         /// <summary>
@@ -37,12 +42,17 @@ namespace MovieReviewApp
         /// <param name="e"></param>
         private async void OnSubmit(object sender, RoutedEventArgs e)
         {
+            _author = new Author(_authorBlock);
+
+            _review = new Review(_movieCombo.ToString(), _rateCombo.ToString(), _reviewBlock.ToString(), _author);
+
+            //SaveReview(_review);
 
             var submit = new MessageDialog("Review has been submitted");
             await submit.ShowAsync();
 
             _movieCombo.SelectedIndex = 0;
-            _starCombo.SelectedIndex = 0;
+            _rateCombo.SelectedIndex = 0;
             _reviewBlock.Text = "";
 
 

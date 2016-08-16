@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Windows.UI.Xaml.Controls;
 
 namespace MovieReviewApp
 {
@@ -11,18 +12,18 @@ namespace MovieReviewApp
         /// <summary>
         /// name of author
         /// </summary>
-        private string _name;
+        private TextBox _name;
 
         /// <summary>
         /// constructor for author conatins name
         /// </summary>
         /// <param name="name"></param>
-        public Author(string name)
+        public Author(TextBox name)
         {
             _name = name;
         }
 
-        public string Name
+        public TextBox Name
         {
             get { return _name; }
             set { _name = value; }
