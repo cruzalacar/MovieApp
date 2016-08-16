@@ -28,6 +28,13 @@ namespace MovieReviewApp
         /// </summary>
         private Author _author;
 
+        /// <summary>
+        /// Constructor requires title, rate, description and author
+        /// </summary>
+        /// <param name="title"> The movie title</param>
+        /// <param name="rate"> The rating of the movie </param>
+        /// <param name="descript"> short review on the movie </param>
+        /// <param name="author"> author of review</param>
         public Review(string title, int rate, string descript, Author author)
         {
             _title = title;
@@ -35,5 +42,30 @@ namespace MovieReviewApp
             _descript = descript;
             _author = author;
         }
+
+        public string Title
+        {
+            get { return _title; }
+            set { _title = value; }
+        }
+
+        public int Rate
+        {
+            get { return _rate; }
+            set { _rate = value; }
+        }
+
+        public string Descript
+        {
+            get { return _descript; }
+            set { _descript = value; }
+        }
+
+        public Author Author
+        {
+            get { return _author; }
+            set { _author = value; }
+        }
+
     }
 }
