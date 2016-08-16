@@ -7,7 +7,7 @@ using Windows.UI.Xaml.Controls;
 
 namespace MovieReviewApp
 {
-    class Author
+    public class Author
     {
         /// <summary>
         /// name of author

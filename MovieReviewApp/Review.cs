@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MovieReviewApp
 {
-    class Review
+    public class Review
     {
         /// <summary>
         /// movie title has-a relationship with movie
