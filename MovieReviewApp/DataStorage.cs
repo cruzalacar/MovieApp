@@ -1,5 +1,4 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -48,7 +47,7 @@ namespace MovieReviewApp
         /// This will scan a json file and return a review object containing the same movie title
         /// </summary>
         /// <param name="targetMovieTitle">This parameter will be used in a json query to locate all reviews with the passed movie title</param>
-        public static Review RetriveData(string targetMovieTitle)
+        public static Review RetrieveData(string targetMovieTitle)
         {
             Review review = new Review(null, null, null, null);
             return review;

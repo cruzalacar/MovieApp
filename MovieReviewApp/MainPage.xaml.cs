@@ -22,6 +22,11 @@ namespace MovieReviewApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        static MainPage()
+        {
+
+        }
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -40,6 +45,11 @@ namespace MovieReviewApp
         private void OnExit(object sender, RoutedEventArgs e)
         {
             Application.Current.Exit();
+        }
+
+        private void LoadReviews()
+        {
+
         }
     }
 }

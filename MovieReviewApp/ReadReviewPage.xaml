@@ -20,7 +20,7 @@
         </Grid.RowDefinitions>
         <Button x:Name="_returnBtn" Content="Return" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" FontSize="30" Click="OnReturn"/>
         <TextBlock x:Name="_read" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Read A Movie Review" VerticalAlignment="Center" Grid.Column="1" FontSize="50"/>
-        <ComboBox x:Name="_movieCombo" HorizontalAlignment="Center" Margin="0" Grid.Row="1" VerticalAlignment="Center" Width="500" Grid.Column="1" Height="70" SelectedIndex="0">
+        <ComboBox x:Name="_movieCombo" HorizontalAlignment="Left" Margin="100,0,0,0" Grid.Row="1" VerticalAlignment="Center" Width="500" Grid.Column="1" Height="70" SelectedIndex="0" SelectionChanged="OnSelected">
             <ComboBoxItem Content="Choose movie title ..." FontSize="20"/>
             <ComboBoxItem Content="Tarzan" FontSize="20"/>
             <ComboBoxItem Content="How to Train Your Dragon" FontSize="20"/>

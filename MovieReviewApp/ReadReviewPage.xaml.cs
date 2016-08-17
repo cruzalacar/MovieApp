@@ -22,6 +22,8 @@ namespace MovieReviewApp
     /// </summary>
     public sealed partial class ReadReviewPage : Page
     {
+        private bool _status = true; 
+
         public ReadReviewPage()
         {
             this.InitializeComponent();
@@ -31,5 +33,15 @@ namespace MovieReviewApp
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
+        private void OnSelected(object sender, SelectionChangedEventArgs e)
+        {
+            ComboBox cmb = sender as ComboBox;
+            _status = !cmb.IsDropDownOpen;
+
+            DataStorage.RetrieveData(_movieCombo.ToString());
+        }
+
+
     }
 }
