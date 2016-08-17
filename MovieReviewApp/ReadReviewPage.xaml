@@ -18,18 +18,20 @@
             <RowDefinition Height="3*"/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="_returnBtn" Content="Return" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" FontSize="30" Click="OnReturn"/>
+        <Button x:Name="_returnBtn" Content="Return" HorizontalAlignment="Center" Margin="48,27,271,41" VerticalAlignment="Center" FontSize="30" Click="OnReturn"/>
         <TextBlock x:Name="_read" HorizontalAlignment="Center" Margin="0" TextWrapping="Wrap" Text="Read A Movie Review" VerticalAlignment="Center" Grid.Column="1" FontSize="50"/>
-        <ComboBox x:Name="_movieCombo" HorizontalAlignment="Center" Margin="0" Grid.Row="1" VerticalAlignment="Center" Width="500" Grid.Column="1" Height="70" SelectedIndex="0">
-            <ComboBoxItem Content="Choose movie title ..." FontSize="20"/>
-            <ComboBoxItem Content="Tarzan" FontSize="20"/>
-            <ComboBoxItem Content="How to Train Your Dragon" FontSize="20"/>
-            <ComboBoxItem Content="Frozen" FontSize="20"/>
-        </ComboBox>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Right" Margin="0" Grid.Row="1" TextWrapping="Wrap" Text="Pick A Movie" VerticalAlignment="Center" FontSize="30"/>
-        <TextBlock x:Name="_reviewBlock" HorizontalAlignment="Center" Margin="140,30" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="300" Width="1000" Grid.ColumnSpan="2"/>
-        <Button x:Name="_backBtn" Content="Back" Grid.Column="1" HorizontalAlignment="Left" Margin="117,38,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="30" Width="200" Height="50"/>
-        <Button x:Name="_nextBtn" Content="Next" Grid.Column="1" HorizontalAlignment="Left" Margin="488,38,0,0" Grid.Row="3" VerticalAlignment="Top" Width="200" Height="50" FontSize="30"/>
+        <Button x:Name="movieTitle" Content="Choose movie title ..." HorizontalAlignment="Left" Margin="265,10,0,0" VerticalAlignment="Top" Height="33" Width="300" Grid.Row="1" Grid.Column="1">
+            <Button.Flyout>
+                <MenuFlyout>
+                    <MenuFlyoutItem Text="Tarzan" Click="OnTarzanSelect"/>
+                    <MenuFlyoutItem Text="Mad Max: Fury Road" Click="OnMadMaxSelect"/>
+                    <MenuFlyoutItem Text="Ace Ventura: When Nature Calls" Click="OnNatureCallsSelect"/>
+                    <MenuFlyoutItem Text="Monty Python And The Holy Grail" Click="OnHolyGrailSelect" />
+                </MenuFlyout>
+            </Button.Flyout>
+        </Button>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Right" Margin="0,10,713,70" Grid.Row="1" TextWrapping="Wrap" Text="Pick A Title" VerticalAlignment="Center" FontSize="30" Width="232" Grid.ColumnSpan="2"/>
+        <ListView x:Name="_reviewBlock" HorizontalAlignment="Center" Margin="10,0,44,60" Grid.Row="2" VerticalAlignment="Center" Height="300" Width="799" Grid.Column="1"/>
 
     </Grid>
 </Page>

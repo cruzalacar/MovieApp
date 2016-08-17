@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -17,10 +18,9 @@ namespace MovieReviewApp
         /// </summary>
         /// <param name="targetMovieTitle">This parameter will be used in a json query to locate all reviews with the passed movie title</param>
         /// <returns>Returns a movie review list containing all the reviews for the specified movie</returns>
-        public static List<Review> LoadData(string targetMovieTitle)
+        public static void LoadData(string targetMovieTitle)
         {
-            List<Review> reviewList = new List<Review>();
-            return reviewList;
+
         }
 
         /// <summary>
@@ -30,28 +30,16 @@ namespace MovieReviewApp
         /// <param name="CurrentReviewList">Takes a Review list as a parameter to add to a json file</param>
         public static void SaveData(Review CurrentReview)
         {
-            List<Review> _data = new List<Review>();
-            _data.Add(new Review()
-            {
-                Title = CurrentReview.Title,
-                Rate = CurrentReview.Rate,
-                Descript = CurrentReview.Descript,
-                Author = CurrentReview.Author
-            });
-            string json = JsonConvert.SerializeObject(_data.ToArray());
 
-            // Write string to file
-            System.IO.File.WriteAllText("MovieReviewDatabase.txt", json);
         }
 
         /// <summary>
         /// This will scan a json file and return a review object containing the same movie title
         /// </summary>
         /// <param name="targetMovieTitle">This parameter will be used in a json query to locate all reviews with the passed movie title</param>
-        public static Review RetriveData(string targetMovieTitle)
+        public static void RetriveData(string targetMovieTitle)
         {
-            Review review = new Review(null, null, null, null);
-            return review;
+
         }
     }
 }
