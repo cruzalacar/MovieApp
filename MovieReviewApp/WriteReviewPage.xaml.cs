@@ -42,7 +42,7 @@ namespace MovieReviewApp
         /// <param name="e"></param>
         private async void OnSubmit(object sender, RoutedEventArgs e)
         {
-            _author = new Author(_authorBlock);
+            _author = new Author(_authorBox);
 
             _review = new Review(_movieCombo.ToString(), _rateCombo.ToString(), _reviewBlock.ToString(), _author);
 
@@ -54,6 +54,7 @@ namespace MovieReviewApp
             _movieCombo.SelectedIndex = 0;
             _rateCombo.SelectedIndex = 0;
             _reviewBlock.Text = "";
+            _authorBox.Text = "";
 
 
         }

@@ -42,7 +42,7 @@
         <Button x:Name="_submitBtn" Content="Submit" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,150,0" Grid.Row="4" VerticalAlignment="Center" FontSize="30" Width="200" Click="OnSubmit" Height="50"/>
         <Button x:Name="_returnBtn" Content="Return" HorizontalAlignment="Center" Margin="0" VerticalAlignment="Center" FontSize="30" Click="OnReturn"/>
         <TextBlock x:Name="_authorTxt" HorizontalAlignment="Right" Margin="0,30,0,36" Grid.Row="4" TextWrapping="Wrap" Text="Author" VerticalAlignment="Center" FontSize="40"/>
-        <TextBox x:Name="_authorBlock" Grid.Column="1" HorizontalAlignment="Left" Margin="50,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="70" Width="296" FontSize="30" MaxLength="15"/>
+        <TextBox x:Name="_authorBox" Grid.Column="1" HorizontalAlignment="Left" Margin="50,0,0,0" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Height="70" Width="296" FontSize="30" MaxLength="15"/>
 
     </Grid>
 </Page>

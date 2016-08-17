@@ -32,6 +32,11 @@ namespace MovieReviewApp
             this.Frame.Navigate(typeof(MainPage));
         }
 
+        /// <summary>
+        /// Event handler for Tarzan Selection
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnTarzanSelect(object sender, RoutedEventArgs e)
         {
             movieTitle.Content = "Tarzan";
@@ -39,9 +44,14 @@ namespace MovieReviewApp
             _reviewBlock.Items.Clear();
 
             _reviewBlock.Items.Add("-------------------\nRating: 3/5" + "\nReview: Good for it's time. Nostalgic." + "\nReviewer: John Smith\n-------------------");
-            _reviewBlock.Items.Add("-------------------\nRating: 4/5" + "\nReview: Pretty old, but pretty good." + "\nReviewer: Joe Balkans\n-------------------");
+            _reviewBlock.Items.Add("-------------------\nRating: 3/5" + "\nReview: Old." + "\nReviewer: Kevin\n-------------------");
         }
 
+        /// <summary>
+        /// Event handler for Mad Max: Fury Road
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnMadMaxSelect(object sender, RoutedEventArgs e)
         {
             movieTitle.Content = "Mad Max: Fury Road";
@@ -53,6 +63,11 @@ namespace MovieReviewApp
             _reviewBlock.Items.Add("-------------------\nRating: 100000/5" + "\nReview: *Music plays*" + "\nReviewer: JOHN CENA\n-------------------");
         }
 
+        /// <summary>
+        /// Event handler for Ace Venture
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnNatureCallsSelect(object sender, RoutedEventArgs e)
         {
             movieTitle.Content = "Ace Ventura: When Nature Calls";
@@ -63,6 +78,11 @@ namespace MovieReviewApp
             _reviewBlock.Items.Add("-------------------\nRating: 5/5" + "\nReview: Can't get better than Jim Carrey. He's my favorite!" + "\nReviewer: Joe Balkans\n-------------------");
         }
 
+        /// <summary>
+        /// Event handler for Monty Python
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void OnHolyGrailSelect(object sender, RoutedEventArgs e)
         {
             movieTitle.Content = "Monty Python And The Holy Grail";

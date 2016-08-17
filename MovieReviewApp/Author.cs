@@ -5,6 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Windows.UI.Xaml.Controls;
 
+/// <summary>
+/// 
+/// </summary>
 namespace MovieReviewApp
 {
     public class Author
