@@ -28,9 +28,17 @@ namespace MovieReviewApp
         /// It will add the object to the review list and writes the data to a file
         /// </summary>
         /// <param name="CurrentReviewList">Takes a Review list as a parameter to add to a json file</param>
-        public static void SaveData(List<Review> CurrentReviewList)
+        public static void SaveData(Review CurrentReview)
         {
-            string json = JsonConvert.SerializeObject(CurrentReviewList.ToArray());
+            List<Review> _data = new List<Review>();
+            _data.Add(new Review()
+            {
+                Title = CurrentReview.Title,
+                Rate = CurrentReview.Rate,
+                Descript = CurrentReview.Descript,
+                Author = CurrentReview.Author
+            });
+            string json = JsonConvert.SerializeObject(_data.ToArray());
 
             // Write string to file
             System.IO.File.WriteAllText("MovieReviewDatabase.txt", json);
