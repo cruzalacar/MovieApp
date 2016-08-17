@@ -9,7 +9,7 @@ namespace MovieReviewApp
 {
     class ReviewProgram
     {
-        private Review _review;
+        //private Review _review;
 
         public void LoadReview()
         {
