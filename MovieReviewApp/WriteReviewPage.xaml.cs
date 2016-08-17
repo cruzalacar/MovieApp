@@ -46,7 +46,7 @@ namespace MovieReviewApp
 
             _review = new Review(_movieCombo.ToString(), _rateCombo.ToString(), _reviewBlock.ToString(), _author);
 
-            
+            DataStorage.SaveData(_review);
 
             var submit = new MessageDialog("Review has been submitted");
             await submit.ShowAsync();
