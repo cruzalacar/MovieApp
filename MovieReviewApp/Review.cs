@@ -29,15 +29,7 @@ namespace MovieReviewApp
         private Author _author;
 
         /// <summary>
-        /// Simplest constructor for the Review class. Used specifically for the DataStorage class
-        /// </summary>
-        public Review()
-        {
-
-        }
-
-        /// <summary>
-        /// Constructor requires title, rate, description and author
+        ///  Simplest constructor for the Review class. Used specifically for the DataStorage class
         /// </summary>
         /// <param name="title"> The movie title</param>
         /// <param name="rate"> The rating of the movie </param>

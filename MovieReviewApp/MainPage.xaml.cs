@@ -22,10 +22,6 @@ namespace MovieReviewApp
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        static MainPage()
-        {
-
-        }
 
         public MainPage()
         {
