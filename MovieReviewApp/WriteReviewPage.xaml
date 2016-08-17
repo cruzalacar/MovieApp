@@ -36,7 +36,7 @@
             <ComboBoxItem Content="4 Stars" FontSize="20"/>
             <ComboBoxItem Content="5 Stars" FontSize="20"/>
         </ComboBox>
-        <TextBox x:Name="_reviewBlock" HorizontalAlignment="Center" Margin="0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="1000" Height="200" Grid.ColumnSpan="2" PlaceholderText="Write review here..." FontSize="30" MaxLength="150"/>
+        <TextBox x:Name="_reviewBlock" HorizontalAlignment="Center" Margin="0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Center" Width="1000" Height="200" Grid.ColumnSpan="2" PlaceholderText="Write review here..." FontSize="30" MaxLength="100" FontWeight="Bold"/>
         <TextBlock x:Name="_movietxt" HorizontalAlignment="Right" Margin="0" Grid.Row="1" TextWrapping="Wrap" Text="Movie Title" VerticalAlignment="Center" FontSize="40"/>
         <TextBlock x:Name="_starsTxt" Margin="0" Grid.Row="2" TextWrapping="Wrap" Text="Star Rating" VerticalAlignment="Center" FontSize="40" HorizontalAlignment="Right"/>
         <Button x:Name="_submitBtn" Content="Submit" Grid.Column="1" HorizontalAlignment="Right" Margin="0,0,150,0" Grid.Row="4" VerticalAlignment="Center" FontSize="30" Width="200" Click="OnSubmit" Height="50"/>
