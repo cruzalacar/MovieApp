@@ -23,8 +23,9 @@
         <ComboBox x:Name="_movieCombo" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="1" VerticalAlignment="Center" Width="500" Height="70" IsDropDownOpen="True" PlaceholderText="" SelectedIndex="0">
             <ComboBoxItem Content="Choose movie title ..." FontSize="20"/>
             <ComboBoxItem Content="Tarzan" FontSize="20"/>
-            <ComboBoxItem Content="How to Train Your Dragon" FontSize="20"/>
-            <ComboBoxItem Content="Frozen" FontSize="20"/>
+            <ComboBoxItem Content="Mad Max: Fury Road" FontSize="20"/>
+            <ComboBoxItem Content="Ace Ventura: When Nature Calls" FontSize="20"/>
+            <ComboBoxItem Content="Monty Python And The Holy Grail" FontSize="20"/>
         </ComboBox>
         <ComboBox x:Name="_rateCombo" Grid.Column="1" HorizontalAlignment="Center" Margin="0" Grid.Row="2" VerticalAlignment="Center" Width="500" Height="70" IsDropDownOpen="True" PlaceholderText="" SelectedIndex="0">
             <ComboBoxItem Content="Choose star rating..." FontSize="20"/>
